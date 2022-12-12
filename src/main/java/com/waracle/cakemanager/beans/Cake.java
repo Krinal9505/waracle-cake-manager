@@ -16,13 +16,13 @@ public class Cake
 	@Id
 	int id;
 	
-	@Column(name="name",insertable = true)
+	@Column(name="name",nullable = false)
 	String name;
 	
-	@Column(name="flavour",insertable = true)
+	@Column(name="flavour",nullable = false)
 	String flavour;
 	
-	@Column(name="description",insertable = true)
+	@Column(name="description",nullable = false)
 	String description;
 	
 	public Cake() {}
